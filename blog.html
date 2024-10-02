@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>আনন্দ ছক </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/icons/vidyamandira_logo.png" />
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/util.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body class="animsition">
+  <!-- Header -->
+  <header>
+    <!-- Header desktop -->
+    <div class="wrap-menu-header gradient1 trans-0-4">
+      <div class="container h-full">
+        <div class="wrap_header trans-0-3">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/icons/vm.png" alt="IMG-LOGO" data-logofixed="images/icons/vm.png" />
+            </a>
+          </div>
+
+          <!-- Menu -->
+          <div class="wrap_menu p-l-45 p-l-0-xl">
+            <nav class="menu">
+              <ul class="main_menu">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                  <a href="menu.html">Magazine</a>
+                </li>
+
+                <li>
+                  <a href="about.html">Wall Magazine</a>
+                </li>
+
+                <li>
+                  <a href="blog.html">আনন্দ ছক</a>
+                </li>
+
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Social -->
+          <div class="social flex-w flex-l-m p-r-20">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Title Page -->
+  <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15"
+    style="background-image: url(images/crosswords.jpg)">
+    <h2 class="tit6 t-center">আনন্দ ছক</h2>
+  </section>
+
+  <!-- Content page -->
+  <section>
+    <div class="bread-crumb bo5-b p-t-17 p-b-17">
+      <div class="container">
+        <a href="index.html" class="txt27"> Home </a>
+
+        <span class="txt29 m-l-10 m-r-10">/</span>
+
+        <span class="txt29"> আনন্দ ছক</span>
+
+        <body class="gandu">
+
+          <h1 class="chumu"><br /><br /></h1>
+          <div id="crossword"></div>
+
+          <div class="clues">
+            <h3>আনন্দের পাশাপাশি সুত্র</h3>
+            <ol id="across-hints"></ol>
+
+            <h3>আনন্দের উপরনীচ সুত্র</h3>
+            <ol id="down-hints"></ol>
+          </div>
+
+          <script>
+            const crossword = [
+              ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+              ['', '', '', '', '', '', '', '', '', '', { letter: 'অ', number: 36 }, { letter: 'নি' }, { letter: 'র্বা' }, { letter: 'ণ', prefilled: true }, '', '', { letter: 'আ', number: 40 }, { letter: 'দি' }, { letter: 'ত্য' }, ''],
+              ['', '', { letter: 'অ', number: 1}, { letter: 'র', prefilled: true }, { letter: 'ণ্য' }, '', '', '', '', '', { letter: 'নী', number: 37 }, { letter: 'লা', prefilled: true  }, { letter: 'ঞ্জ' }, { letter: 'ন' }, '', '', { letter: 'স', number: 13 }, { letter: 'ন্দী' }, { letter: 'প', prefilled: true }, ''],
+              ['', '', { letter: 'ভ্র' }, '', '', '', '', '', { letter: 'ঔ', number: 38 }, { letter: 'ষ্ণি' }, { letter: 'ক', prefilled: true }, '', '', '', '', '', { letter: 'ফা' }, '', '', ''],
+              ['', '', { letter: 'নী', number: 2 , prefilled: true }, { letter: 'লে' }, { letter: 'শ' }, '', '', '', '', '', '', '', '', { letter: 'কু', number: 33 }, '', '', { letter: 'কু', prefilled: true }, '', '', ''],
+              ['', '', { letter: 'ল' }, '', '', '', '', { letter: 'শু', number: 39 }, '', '', '', { letter: 'স', number: 15 }, { letter: 'ঞ্জ' }, { letter: 'য়' }, '', { letter: 'প্র', number: 14 }, { letter: 'ল' }, { letter: 'য়' }, '', ''],
+              ['', '', '', '', '', '', { letter: 'অ', number: 3 }, { letter: 'ভ্র' }, { letter: 'দ্বী', number: 34 }, { letter: 'প' }, '', { letter: 'ম্মি' }, '', { letter: 'ন', number: 16 }, { letter: 'য়', prefilled: true }, { letter: 'ন' }, '', '', '', ''],
+              ['', '', '', '', '', '', { letter: 'র্ণ' }, '', { letter: 'পা', number: 17 }, { letter: 'রি', prefilled: true }, { letter: 'জা' }, { letter: 'ত' }, '', '', { letter: 'সু', number: 24 }, { letter: 'ম' }, { letter: 'ন' }, '', '', ''],
+              ['', '', '', '', { letter: 'বি', number: 4 }, { letter: 'প্ল' }, { letter: 'ব', prefilled: true }, '', { letter: 'ঞ্জ' }, '', '', '', '', '', { letter: 'প্রি', number: 25 }, { letter: 'য়', prefilled: true }, { letter: 'ম' }, '', '', ''],
+              ['', { letter: 'অ', number: 5 }, { letter: 'ভি' }, { letter: 'রা', number: 26 }, { letter: 'জ', prefilled: true }, '', '', '', { letter: 'ন' }, '', '', '', { letter: 'মৃ', number: 18 }, { letter: 'ন্ম' }, { letter: 'য়' }, '', '', '', '', ''],
+              ['', '', { letter: 'সৃ', number: 6 }, { letter: 'জ' }, { letter: 'ন' }, '', '', '', '', '', '', '', { letter: 'গা' }, '', '', '', '', '', '', { letter: 'দে', number: 31 }],
+              ['', '', '', { letter: 'না' }, '', '', '', '', '', '', '', { letter: 'অ', number: 19 }, { letter: 'ঙ্ক' }, { letter: 'ন', prefilled: true }, '', '', '', '', '', { letter: 'বা', prefilled: true }],
+              ['', '', '', { letter: 'রা', number: 35 }, { letter: 'জ', prefilled: true }, { letter: 'কু' }, { letter: 'মা',prefilled: true }, { letter: 'র' }, '', '', '', { letter: 'দ্রি' }, '', '', '', '', '', '', { letter: 'অ', prefilled: true }, { letter: 'র্ঘ' }],
+              ['', '', '', { letter: 'য়',prefilled: true}, '', '', '', { letter: 'ক্ষি' }, '', '', { letter: 'রা', number: 20 }, { letter: 'জ', prefilled: true }, { letter: 'র্ষি' }, '', '', '', '', '', { letter: 'ভি' }, ''],
+              [{ letter: 'দে', number: 7 }, { letter: 'বা',prefilled: true }, { letter: 'রু', number: 27 }, { letter: 'ণ'}, '', { letter: 'তৃ', number: 8 }, { letter: 'ষি' }, { letter: 'ত',prefilled: true }, '', '', { letter: 'হু' }, '', '', '', '', '', '', { letter: 'প্র', number: 32 }, { letter: 'ষে', prefilled: true }, ''],
+              ['', '', { letter: 'দ্র' }, '', '', '', '', '', { letter: 'গো', number: 12 }, { letter: 'পা', number: 30 }, { letter: 'ল' }, '', '', '', '', { letter: 'সু', number: 22 }, { letter: 'প্র' }, { letter: 'তী' }, { letter: 'ক' }, ''],
+              ['', { letter: 'বি', number: 9 }, { letter: 'প্র' }, { letter: 'দী', prefilled: true }, { letter: 'প', number: 28 }, '', '', { letter: 'সি', number: 11 }, { letter: 'দা', prefilled: true }, { letter: 'র্থ' }, '', '', '', '', '', { letter: 'জি' }, '', { letter: 'ম', prefilled: true }, '', ''],
+              ['', { letter: 'ষ্ণু' }, { letter: 'তা' }, '', { letter: 'থি' }, '', '', '', '', '', '', '', { letter: 'অ', number: 23 }, { letter: 'ভি', prefilled: true }, { letter: 'জি' }, { letter: 'ৎ' }, '', '', '', ''],
+              ['', '', { letter: 'প', prefilled: true }, '', { letter: 'কৃ', number: 10 }, { letter: 'শা', prefilled: true }, { letter: 'নু' }, '', '', '', '', '', { letter: 'রি', prefilled: true }, '', '', '', '', '', '', ''],
+              ['', '', '', '', { letter: 'ৎ' }, '', '', '', '', '', '', '', { letter: 'ত্র' }, '', '', '', '', '', '', '']
+            ];
+
+            const acrossHints = [
+              "১. নীললোহিতের লেখায় ফুটে ওঠে এখানকার দিন রাত্রি",
+              "২. নীল ঈশ্বর (বিষ্ণু)",
+              "৩. প্রভুর প্রথম আলো",
+              "৪. শাসকের শোষণে শোষিত জনসাধারণ যা করতে বাধ্য হয়",
+              "৫. একজন নির্ভীক রাজা",
+              "৬. সৃজন - সৃষ্টি, বিবর্তন, নির্মাণ",
+              "৭. সূর্যের আরেক নাম",
+              "৮. পিপাসু",
+              "৯. *এটা না হয় আপনারাই ভাবুন ;)*",
+              "১০. আগুন শিখা",
+              "১১. ইনি পরবর্তীকালে বৌদ্ধধর্মের প্রবর্তন করেন",
+              "১২. রাজা কৃষ্ণচন্দ্রের রাজসভায় নিযুক্ত মনোরঞ্জনকারী",
+              "১৩. ফেলুদা খুঁজলেন ঔরঙ্গজেবের আংটি — ফুটে উঠল এনার চলচ্চিত্রে",
+              "১৪. আমি মহা _____ এর দ্বাদশ রবির রাহু-গ্রাস!",
+              "১৫. ইতিহাসের প্রথম রিপোর্টার এনাকেই বলা যেতে পারে",
+              "১৬. _______অভিরাম মোর ________অভিরাম",
+              "১৭. সমুদ্রমন্থনের সময় উঠে আসা কল্পতরু",
+              "১৮. মাটি দিয়ে তৈরি এমন",
+              "১৯. ভ্যান গগ কিংবা পাবলো পিকাসোকে আমাদের কাছে খ্যাত করেছে এই শিল্প",
+              "২০. ঋষিতুল্য রাজা",
+              "২১. পূজার উপকরণ",
+              "২২. ভগবান শিবের আরেক নাম",
+              "২৩. বিজয়ী",
+              "২৪. ইনি ঘন্টাখানেক সঙ্গে থাকেন",
+              "২৫. প্রিয়জন",
+              "৩৫. রাজার উত্তরসূরী",
+              "৩৬. যা নির্বাপিত হয় না",
+              "৩৮. উষ্ণীষ যিনি ধারণ করেন",
+              "৪০. ভগবান সূর্যের আরেক নাম"
+            ];
+
+            const downHints = [
+              "১. ভগবান বাসুদেবের আরেক নাম	",
+              "৩. সমুদ্র/সাগর",
+              "৪. নবান্ন নাটকের রচয়িতা",
+              "৯. ত্রিমূর্তির এক মূর্তি",
+              "১৪. প্রাণ, অত্যাবশ্যক নীতি, শক্তি যা শরীর ও মনকে প্রাণবন্ত করে এবং একত্রে ধরে রাখে",
+              "১৫. খুব বেশি নয়, খুব কম নয়, পরিমিত",
+              "১৮. চাঁদের আরেক নাম",
+              "১৯. পর্বতশ্রেষ্ঠ",
+              "২০. এনার জন্যই ২০২৪ টি২০ তে শ্রেষ্ঠ হল ভারত",
+              "২১. রাজগদি স্থাপনের অনুষ্ঠান",
+              "২২. মহান বিজয় যিনি এনেছেন",
+              "২৩. যে শত্রুর হাত থেকে রক্ষা করে",
+              "২৬.'মেঘনাদবধকাব্য' এর ইংরেজি অনুবাদক",
+              "২৭. ভগবান শিবের তেজ ",
+              "২৮. পথের দিশারী",
+              "২৯. নিরাপদ রাখেন যিনি",
+              "৩০. ক্লৈবং মা স্ম গম: ________ নৈতত্ত্বয্যুপপদ্যতে",
+              "৩১. ঈশ্বরের কাছে নিবেদন",
+              "৩২. সদৃশ",
+              "৩৩. সূর্যের গতিপথ",
+              "৩৪. প্রদীপের চোখ",
+              "৩৬. যোদ্ধা",
+              "৩৭. তুঁতে",
+              "৩৯. ______ জোৎস্না-পুলকিত-যামিনীম্",
+              "৪০. উদার/সমবেদী ব্যক্তি"
+            ];
+
+            const crosswordContainer = document.getElementById('crossword');
+
+            // Fill the crossword grid
+            crossword.forEach(row => {
+              row.forEach(cell => {
+                const cellElement = document.createElement('div');
+                cellElement.classList.add('cell');
+
+                if (cell === '') {
+                  cellElement.classList.add('black-cell');
+                } else {
+                  // Add number to the first letter cell of each word
+                  if (cell.number) {
+                    const numberElement = document.createElement('div');
+                    numberElement.classList.add('cell-number');
+                    numberElement.textContent = cell.number;
+                    cellElement.appendChild(numberElement);
+                  }
+
+                  // Pre-fill letters for hints
+                  if (cell.prefilled) {
+                    const prefilledElement = document.createElement('div');
+                    prefilledElement.textContent = cell.letter;
+                    prefilledElement.classList.add('pre-filled');
+                    cellElement.appendChild(prefilledElement);
+                  } else {
+                    // Add input element for user to fill letters
+                    const inputElement = document.createElement('input');
+                    inputElement.type = 'text';
+                    inputElement.maxLength = '4'; // Only 1 character per cell
+                    inputElement.classList.add('letter-input');
+                    cellElement.appendChild(inputElement);
+                  }
+                }
+
+                crosswordContainer.appendChild(cellElement);
+              });
+            });
+
+            // Fill clues for across and down
+            const acrossHintsContainer = document.getElementById('across-hints');
+            acrossHints.forEach(hint => {
+              const listItem = document.createElement('li');
+              listItem.textContent = hint;
+              acrossHintsContainer.appendChild(listItem);
+            });
+
+            const downHintsContainer = document.getElementById('down-hints');
+            downHints.forEach(hint => {
+              const listItem = document.createElement('li');
+              listItem.textContent = hint;
+              downHintsContainer.appendChild(listItem);
+            });
+          </script>
+          <a href="https://drive.google.com/file/d/1qGEDqy8VJPRd7NxjyoWEWfuB9NYCQG5n/view?usp=sharing" target="_blank">খুঁজে নিন
+            আনন্দের উত্তর ...</a>
+
+        </body>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg1">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 p-t-50">
+          <!-- - -->
+          <h4 class="txt13 m-b-33">Contact Us</h4>
+
+          <ul class="m-b-70">
+            <li class="txt14 m-b-14">
+              <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
+              <a href="https://vidyamandira.ac.in/">Ramakrishna Mission Vidyamandira, Belur Math, Howrah, West Bengal,
+                Pin-711202</a>
+            </li>
+
+            <li class="txt14 m-b-14">
+              <i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
+              <a href="tel:+033-2654-9181/9632">2654-9181 </a> / <a href="tel:+033-2654-9632">2654-9632 </a>
+            </li>
+            <li class="txt14 m-b-14">
+              <i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
+              <a href="mailto:vidyamandira@gmail.com">vidyamandira@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-4 p-t-50">
+          <!-- - -->
+          <h4 class="txt13 m-b-33">Query Info</h4>
+          <ul>
+            <li class="txt14">~ <a href="mailto:rudrapratapbhattacharya29@gmail.com">rudrapratapbhattacharya29@gmail.com</a></li>
+            <li class="txt14">~ <a href="mailto:oushnikbhaduri2@gmail.com">oushnikbhaduri2@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-4 p-t-50">
+          <div class="text-right">
+            <img src="images/icons/cum.png" alt="Logo" class="logo" style="width: 275px; height: auto" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="end-footer bg2">
+      <div class="container">
+        <div class="flex-sb-m flex-w p-t-22 p-b-22">
+          <div class="p-t-5 p-b-5">
+
+          </div>
+
+          <div class="txt17 p-r-20 p-t-5 p-b-5">
+            Copyright &copy; 2024 All rights reserved | Vivek Bhavan Wall Magazine
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <div class="btn-back-to-top bg0-hov" id="myBtn">
+    <span class="symbol-btn-back-to-top">
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </span>
+  </div>
+
+  <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+  <script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+  <script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+  <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/slick-custom.js"></script>
+  <script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+  <script type="text/javascript">
+    $(".parallax100").parallax100();
+  </script>
+  <script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+  <script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+  <script type="text/javascript" src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var searchInput = document.getElementById("searchInput");
+      var blogTitles = document.querySelectorAll(".text-blo4 h4");
+
+      searchInput.addEventListener("input", function () {
+        var searchTerm = searchInput.value.trim().toLowerCase();
+
+        blogTitles.forEach(function (title) {
+          var blogTitleText = title.textContent.toLowerCase();
+          var parentBlock = title.closest(".blo4");
+
+          if (blogTitleText.includes(searchTerm)) {
+            parentBlock.style.display = "block";
+          } else {
+            parentBlock.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
